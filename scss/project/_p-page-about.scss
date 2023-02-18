@@ -1,0 +1,60 @@
+@use "../global/" as *;
+
+.p-page-about {
+  &__img {
+    position: fixed;
+    top: 160px;
+    z-index: -1;
+  }
+
+
+
+&__photo {
+
+  max-height: 100vh;
+width: 100vw;
+object-fit: cover;
+@media screen and (max-width:960px){
+display: none;  
+}
+}
+&__photo-sp {
+
+display: none;
+@media screen and (max-width:960px){
+ display: block; 
+  }
+}
+
+&__content-box {
+  margin-top: 1000px;
+  @media screen and (max-width:960px){
+margin-top: 600px;    
+  }
+}
+
+
+
+  &__list {
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 100px;
+  }
+  &__left{
+    width: 30%;
+    padding: 10px 0;
+    border-bottom: 1px solid $color-gray;
+  }
+  &__right {
+    width: 70%;
+    padding: 10px 0;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  &__profile-title {
+    margin-bottom: 50px;
+  }
+
+  
+}
+

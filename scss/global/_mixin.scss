@@ -1,0 +1,13 @@
+
+
+@mixin border-after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) skew(-25deg);
+  height: 20px;
+  width: 10px;
+  border-right: 1px solid #40D5E8;
+  background-color: white;
+  content: "";
+}

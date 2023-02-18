@@ -1,0 +1,52 @@
+@use "../global/" as * ;
+
+.p-section {
+
+
+&__top {
+  position: relative;
+}
+&__top::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, $color-main 0%, #fff);
+}
+
+&__top {
+  margin-bottom: 120px;
+
+}
+
+&__link {
+
+  text-align: right;
+  margin-top: 200px;
+
+}
+
+&__link-text {
+  border-bottom: 1px solid $color-main;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+
+&__link-text::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: $color-main;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  display: block;
+}
+
+}
+
+
+

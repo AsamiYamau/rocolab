@@ -1,0 +1,12 @@
+@use "../global/" as *;
+
+.c-button {
+  max-width: 600px;
+
+  border: 2px solid $color-orange;
+  border-radius: 10px;
+  padding: 10px 40px;
+  margin: 20px auto;
+  background-color: #fff;
+ 
+}

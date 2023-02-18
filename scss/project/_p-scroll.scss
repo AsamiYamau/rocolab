@@ -1,0 +1,42 @@
+@use "../global/" as *;
+
+.p-scroll {
+
+  margin-bottom: 400px;
+  text-align: center;
+  height: 100px;
+  position: relative;
+
+
+
+}
+
+.p-scroll::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  width: 1px;
+  height: 80px;
+  background: $color-main;
+  animation: pathmove 1.8s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 20px;
+    opacity: 0;
+  }
+
+  30% {
+    height: 80px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 100px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.p-section-roco {
+
+  margin-bottom: 250px;
+ 
+&__list {
+font-weight: bold;
+
+}
+
+&__list-item {
+
+margin-bottom: 100px;
+
+
+
+}
+
+&__list-title {
+  padding: 80px;
+}
+
+
+}
+
+.p-section-roco p:nth-child(even) {
+  background-image: url(img/dot2.png);
+  background-size: contain;
+
+
+}
+.p-section-roco p:nth-child(odd) {
+
+  background-image: url(img/dot1.png);
+  background-size: contain;
+}
+
+.p-section-roco li:nth-child(even) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+

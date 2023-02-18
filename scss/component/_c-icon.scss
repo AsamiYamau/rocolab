@@ -1,0 +1,27 @@
+@use "../global/" as *;
+
+.c-icon {
+  background-color: #fff;
+  position: fixed;
+ bottom: 0;
+opacity: 0;
+width: 100%;
+transition: .8s;
+text-align: center;
+
+  &__text {
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-orange;
+margin-right: 20px;
+
+  }
+  &__img {
+    width: 50px;
+    vertical-align: middle;
+  }
+}
+
+.is-contact {
+opacity: 1;
+}

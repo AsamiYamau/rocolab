@@ -1,0 +1,41 @@
+@use "../global/" as * ;
+
+.p-mv {
+
+  width: 100%;
+  height: calc(100vh - 160px);
+background: linear-gradient(to bottom, $color-main 0%,  #ffffff00);
+
+
+
+&__img{
+  max-width: 1600px;
+  position: fixed;
+inset: 0;
+margin: auto;
+transition: .8s;
+}
+
+&__page-img{
+  max-width: 1600px;
+  position: fixed;
+inset: 0;
+margin: auto;
+opacity: .1;
+z-index: -1;
+}
+
+
+
+
+
+
+}
+
+.is-active {
+ opacity: .1;
+ z-index: -1;
+}
+
+// やりたい動作
+// ロゴ固定、スクロールしたら薄く。カラーはスクロールする。

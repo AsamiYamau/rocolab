@@ -1,0 +1,50 @@
+@use "../global/" as *;
+
+.p-page-price {
+
+&__content-box {
+  margin-bottom: 250px;
+}
+  &__content1 {
+    padding-top: 300px;
+  }
+  &__title {
+    color: $color-blue;
+    position: relative;
+    border-bottom: 1px solid $color-main;
+    display: inline-block;
+    margin: 50px 0;
+   
+  }
+  &__title::after {
+    @include border-after;
+  }
+
+  &__text {
+    margin: 50px 0;
+
+  }
+  &__top-text {
+    margin: 50px 0;
+    background-color: #fff;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  &__list {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width:960px) {
+   display: block;   
+    }
+  }
+  &__list-item {
+    width: 45%;
+    @media screen and (max-width:960px) {
+    width: 100%; 
+       }
+  }
+
+}

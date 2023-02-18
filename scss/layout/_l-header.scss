@@ -1,0 +1,141 @@
+
+
+
+@use "../global/" as *;
+.l-header {
+  display: flex;
+justify-content: space-between;
+  background: linear-gradient(to bottom, $color-main 0%,  #ffffff00);
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 3;
+padding: 10px 40px;
+transition: .8s;
+opacity: 0;
+
+
+  &__logo {
+ 
+    width: 100px;
+
+  }
+
+
+  &__list {
+
+    // position: fixed;
+    // right: 40px;
+    // top: 20px;
+    @media screen and (max-width:960px){
+      display: none;
+      position: fixed;
+ top: 0;
+ right: -100px;
+ width: 300px;
+ transition: all .5s;
+ z-index: 5;
+ margin-top: 100px;
+          }
+  }
+
+
+  &__list-item {
+    display: inline;
+font-size: 14px;
+margin-left: 20px;
+vertical-align: middle;
+@media screen and (max-width:960px){
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid $color-main;
+  margin-bottom: 50px;
+}
+  }
+}
+
+.is-headnav {
+  opacity: 1;
+}
+
+// ハンバーガー
+.l-header {
+ &__mask {
+  display: none;
+  @media screen and (max-width:960px){
+    
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffea;
+  position: fixed;
+  right: -100px;
+  transition: all .5s;
+  z-index: 4;
+  }
+ }
+ 
+  &__btn {
+cursor: pointer;
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 5;
+    @media screen and (max-width:960px){
+display: block; 
+    }
+  }
+  &__line {
+position: absolute;
+    width: 100%;
+    height: 4px;
+background-color: #000;
+transition: all .5s;
+  }
+  &__line:nth-child(1) {
+width: 50%;
+    top: 0;
+  }
+  &__line:nth-child(2) {
+width: 70%;
+    top: 50%;
+  }
+  &__line:nth-child(3) {
+
+    top: 100%;
+  }
+
+
+
+
+}
+
+.is-open .l-header__list-item {
+  display: block;
+
+}
+
+.is-open .l-header__list {
+display: block;
+right: 0;
+}
+.is-open .l-header__mask {
+display: block;
+right: 0;
+}
+
+.is-open .l-header__line:nth-child(1) {
+  width: 100%;
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg);
+}
+.is-open .l-header__line:nth-child(2) {
+
+display: none;
+}
+.is-open .l-header__line:nth-child(3) {
+  width: 100%;
+  -webkit-transform: translateY(-20px) rotate(45deg);
+  transform: translateY(-20px) rotate(45deg);
+}

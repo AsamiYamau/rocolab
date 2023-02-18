@@ -1,0 +1,25 @@
+@use "../global/" as *;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: $color-brown;
+font-family:  sans-serif;
+letter-spacing: 0.2em;
+line-height: 2;
+}
+
+a {
+  text-decoration: none;
+color: $color-brown;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
